@@ -7,3 +7,5 @@ require '../vendor/autoload.php';
 $app = new App();
 
 $response = $app->run(ServerRequest::fromGlobals());
+
+\Http\Response\send($response);
